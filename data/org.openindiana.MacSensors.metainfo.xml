@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2026 Ignacio Soriano -->
+<component type="desktop-application">
+  <id>org.openindiana.MacSensors</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>CDDL-1.0</project_license>
+  <name>Mac Sensors</name>
+  <summary>Temperatures and fans of Intel Macs and other machines</summary>
+  <description>
+    <p>
+      Mac Sensors shows the temperatures and fans of an Intel Mac on a
+      drawing of the machine: CPU, graphics, memory, chipset, display and
+      power supply, with a live history per sensor and the fan speed.
+    </p>
+    <p>
+      On illumos it reads the Apple System Management Controller through
+      the applesmc driver and smcstat, and the CPU and chipset sensors of
+      any machine through the kernel sensor framework (/dev/sensors).
+      Profiles exist for the Mac Pro (Late 2013) and the iMacs of 2011 to
+      2013; other machines get the cards without a drawing.
+    </p>
+  </description>
+  <launchable type="desktop-id">org.openindiana.MacSensors.desktop</launchable>
+  <url type="homepage">https://github.com/isoriano1968/mac-sensors</url>
+  <developer id="io.github.isoriano1968">
+    <name>Ignacio Soriano</name>
+  </developer>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Mac Pro (Late 2013)</caption>
+      <image>https://raw.githubusercontent.com/isoriano1968/mac-sensors/v1.2/screenshots/macpro6-1.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>iMac (21.5-inch, Late 2013)</caption>
+      <image>https://raw.githubusercontent.com/isoriano1968/mac-sensors/v1.2/screenshots/imac14-1.png</image>
+    </screenshot>
+  </screenshots>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.2" date="2026-11-13">
+      <description>
+        <p>iMac (21.5-inch, Late 2013) profile: graphics in the CPU, mainboard
+        card when there is no drive sensor; model names in the header.</p>
+      </description>
+    </release>
+  </releases>
+</component>
